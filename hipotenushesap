@@ -1,0 +1,29 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      int a,b,c;
+      Scanner input = new Scanner(System.in);
+
+      System.out.println(" a deger giriniz :");
+      a = input.nextInt();
+
+      System.out.println("b deger giriniz : ");
+      b = input.nextInt();
+
+      System.out.println("c değeri girinz");
+      c = input.nextInt();
+
+      int u = (a+b+c)/ 2 ;
+      int cevre = 2*u;
+
+      System.out.println("cevre hesabı " + cevre);
+
+      int alan1 = u * (u-a)* (u-a) * (u-c);
+      System.out.println("alan1 hesabı " + alan1);
+
+
+      int alan2 = alan1* alan1;
+      System.out.println("alan2 hesabı"+ alan2);
