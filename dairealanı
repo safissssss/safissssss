@@ -1,0 +1,23 @@
+package com.company;
+  import javax.swing.plaf.synth.SynthOptionPaneUI;
+  import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+       
+        int rdeger ;
+        double alfa,formul ;
+
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println(" rdeger belirt : ");
+        rdeger =input.nextInt();
+
+        System.out.println("alfa degeri belirt");
+        alfa = input.nextDouble();
+
+        formul = 3.14 * (rdeger*rdeger) * alfa / 360;
+
+        System.out.println("formulun degeri : " + formul);
