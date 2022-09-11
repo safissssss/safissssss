@@ -1,0 +1,21 @@
+ package com.company;
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("deger girin : " );
+        int deger = inp.nextInt();
+
+        String deger2 = ((deger>=-128) &&(deger<= 127))? "deger byte turu" : "deger byte turu icermez";
+        String deger3 = ((deger<=32.762)&&(deger>=-32.762)) ? "deger short turu" : "deger short turu icermez";
+        String deger4 = ((deger>=Math.pow(-2,31))&&(deger<=Math.pow(2,31))) ? "deger int turu" : "deger int turu icermez";
+        String deger5 = ((deger<=Math.pow(2,63))&& (deger>=Math.pow(-2,63))) ? "deger long turu" : "deger long turu icermez";
+
+        System.out.println(deger2);
+        System.out.println(deger3);
+        System.out.println(deger4);
+        System.out.println(deger5);
