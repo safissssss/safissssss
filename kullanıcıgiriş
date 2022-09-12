@@ -1,0 +1,50 @@
+package com.company;
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String userName,passWord;
+
+
+        Scanner inp = new Scanner(System.in);
+
+
+        System.out.print("kullanıcı adını giriniz : ");
+        userName= inp.nextLine();
+
+        System.out.print("sifreyi giriniz : ");
+        passWord = inp.nextLine();
+
+
+        if(userName.equals("patika")&&passWord.equals("java101")) {
+            System.out.println("giriş yaptınız");
+        }else if(!passWord.equals("java101")){
+        System.out.println("şifre hatalı şifreyi yenilemek istermisiniz");}
+
+        System.out.println("1-sifre yenile\n 2-tekrar giris yap");
+        System.out.println("seciminiz");
+
+        int select = inp.nextInt();
+
+
+
+        if(select == 1 ){
+
+                Scanner inp2 = new Scanner(System.in);
+
+                System.out.println("yeni sifre belirle : ");
+                String passWord2=inp2.nextLine();
+                
+                if (passWord2.equals("java101")){
+                System.out.println("eski ile aynı olamaz");
+
+                }else if (!passWord2.equals("java101")) {
+                System.out.println("yeni sifre : " + passWord2);
+            }
+
+                }else if(select == 2) {
+            System.out.println("tekrar giris yap : ");
+        }
+
+
