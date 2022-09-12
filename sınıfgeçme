@@ -1,0 +1,51 @@
+package com.company;
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int mat,fızık,turkce,kimya,muzik;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("matematik notunu giriniz : ");
+        mat = inp.nextInt();
+
+        System.out.println("fizik notunu giriniz : ");
+        fızık = inp.nextInt();
+
+        System.out.println("turkce notunu giriniz : ");
+        turkce = inp.nextInt();
+
+        System.out.println("kimya notunu giriniz : ");
+        kimya = inp.nextInt();
+
+        System.out.println("muzik notunu giriniz : ");
+        muzik = inp.nextInt();
+
+
+        if ((mat<=0)||(mat>=100)){
+            mat = 0;}
+         if ((fızık<=0)||(fızık>=100)){
+             fızık = 0;}
+
+        if ((turkce<=0)||(turkce>=100)){
+            turkce = 0;}
+
+        if ((kimya<=0)||(kimya>=100)){
+            kimya = 0;}
+
+        if ((muzik<=0)||(muzik>=100)){
+            muzik = 0;}
+
+
+        double ort = (mat+turkce+kimya+fızık+muzik);
+        if (ort<=55){
+            System.out.println("sınıfta kaldın");
+
+         }else{
+            System.out.println("sınıfı geçtiniz");
+
+
+
+        }
