@@ -1,0 +1,34 @@
+package com.company;
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int n;
+        Scanner inp = new Scanner(System.in);
+
+
+        System.out.println(" n sayısı giriniz ");
+        n = inp.nextInt();
+
+        if ((n >= 1) && (n <= 100)) {
+            if (n % 2 == 0) {
+                if ((n >= 2) && (n <= 5)) {
+                    System.out.println("not weird");
+                }
+                if ((n >= 6) && (n <= 20)) {
+                    System.out.println("weird");
+                }
+            } else {
+                System.out.println("weird");
+            }
+         if (n>=20){
+            System.out.println("not weird");
+        }
+
+
+        }
+    }
+}
+
+
