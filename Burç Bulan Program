@@ -1,0 +1,114 @@
+ package com.company;
+ import org.w3c.dom.ls.LSOutput;
+
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int dogumgunu, dogumayi;
+        String burc = " ";
+       
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("dogum ayi giriniz : ");
+        dogumayi = inp.nextInt();
+        System.out.print("dogum gunu giriniz : ");
+        dogumgunu = inp.nextInt();
+
+
+
+        if(dogumayi ==1) {
+            if (dogumgunu < 22) {
+                burc = "oglak";
+            } else {
+                burc = "kova";
+            }
+        }
+
+
+        if(dogumayi ==2){
+        if (dogumgunu < 20) {
+            burc = "kova";
+        } else {
+            burc = "balık";
+        }
+
+    }
+        if(dogumayi ==3){
+            if (dogumgunu < 21) {
+            burc = "balık";
+        } else {
+            burc = "koc";
+        }
+
+
+    }
+        if(dogumayi ==4){
+        if (dogumgunu < 21) {
+            burc = "koc";
+        } else {
+            burc = "boga";
+        }
+    }
+        if(dogumayi ==5){
+        if (dogumgunu < 22) {
+            burc = "boga";
+        } else {
+            burc = "ıkızler";
+        }
+    }
+        if(dogumayi ==6){
+        if (dogumgunu < 23) {
+            burc = "ıkızler";
+        } else {
+            burc = "yengec";
+        }
+    }
+        if(dogumayi ==7){
+        if (dogumgunu < 23) {
+            burc = "yengec";
+        } else {
+            burc = "aslan";
+        }
+    }
+        if(dogumayi ==8){
+        if (dogumgunu < 23) {
+            burc = "aslan";
+        } else {
+            burc = "basak";
+        }
+    }
+        if(dogumayi ==9){
+        if (dogumgunu < 23) {
+            burc = "basak";
+        } else {
+            burc = "terazı";
+        }
+    }
+        if(dogumayi ==10){
+        if (dogumgunu < 23) {
+            burc = "terazı";
+        } else {
+            burc = "akrep";
+        }
+    }
+        if(dogumayi ==11){
+        if (dogumgunu < 22) {
+            burc = "akrep";
+        } else {
+            burc = "yay";
+        }
+    }
+        if(dogumayi ==12){
+        if (dogumgunu < 22) {
+            burc = "yay";
+        } else {
+            burc = "oglak";
+        }
+    }
+
+        System.out.println("burcunuz " + burc);
+      
+
