@@ -1,0 +1,42 @@
+package com.company;
+
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+      int dogumyılınız;
+
+      Scanner inp = new Scanner(System.in);
+      System.out.print("dogum yilinizi giriniz : ");
+      dogumyılınız= inp.nextInt();
+
+      if (dogumyılınız%12==0){
+          System.out.println("cin zodya burcunuz maymun");}
+      if (dogumyılınız%12==1){
+          System.out.println("cin zodya burcunuz horoz");}
+      if (dogumyılınız%12==2){
+          System.out.println("cin zodya burcunuz köpek");}
+      if (dogumyılınız%12==3){
+          System.out.println("cin zodya burcunuz domuz");}
+      if (dogumyılınız%12==4){
+          System.out.println("cin zodya burcunuz fare");}
+      if (dogumyılınız%12==5){
+          System.out.println("cin zodya burcunuz okuz");}
+      if (dogumyılınız%12==6){
+          System.out.println("cin zodya burcunuz kaplan");}
+      if (dogumyılınız%12==7){
+          System.out.println("cin zodya burcunuz tavsan");}
+      if (dogumyılınız%12==8){
+          System.out.println("cin zodya burcunuz ejderha");}
+      if (dogumyılınız%12==9){
+          System.out.println("cin zodya burcunuz yılan");}
+      if (dogumyılınız%12==10){
+          System.out.println("cin zodya burcunuz at");}
+      if (dogumyılınız%12==11){
+          System.out.println("cin zodya burcunuz koyun");}
+
+
+
+
