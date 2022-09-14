@@ -1,0 +1,47 @@
+package com.company;
+
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        int mesafe,yas,yolculuktipi;
+        double ucret,indirimliucret,yasindirimi,yasindirimi2,yasindirimi3;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("mesafe giriniz : ");
+        mesafe = inp.nextInt();
+
+        if ((mesafe>= 0)){
+            ucret = 0.10*mesafe;
+            System.out.println("ucret " + ucret);
+
+            System.out.println("1-tek yön\n2-gidiş-dönüş");
+            System.out.println("seciminiz : ");
+            yolculuktipi = inp.nextInt();
+            if (yolculuktipi==2){
+                indirimliucret= ucret*100/20;
+                System.out.println("ındırım uygulandı" + (ucret + indirimliucret));}
+                else{
+                System.out.println("ındırımsız");
+            }
+            System.out.print("yas giriniz : ");
+            yas = inp.nextInt();
+            if (yas<=12){
+                 yasindirimi=ucret*100/50;
+                System.out.println("ucret " + (ucret +yasindirimi));}
+                else if (yas<=24){
+                    yasindirimi2 =ucret*100/10;
+                System.out.println("ucret " + (ucret +yasindirimi2));}
+                else if(yas>=65){
+                    yasindirimi3= ucret*100/30;
+                System.out.println("ucret "+ (ucret+yasindirimi3));
+
+                }
+
+            }
+        else {
+            System.out.println("hatalı veri girdiniz ! ");
+        }
