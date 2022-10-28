@@ -1,0 +1,17 @@
+  int k,r;
+         int total = 1;
+
+         Scanner inp = new Scanner(System.in);
+         System.out.println("sayi giriniz : ");
+         k= inp.nextInt();
+
+         Scanner input = new Scanner(System.in);
+         System.out.println("ussu yazin : ");
+         r=input.nextInt();
+
+         for (int i =1;i<=r;i++){
+             total *=k;
+         }
+
+         System.out.println("islemin sonucu : "+ total);
+
