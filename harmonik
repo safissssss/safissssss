@@ -1,0 +1,10 @@
+         Scanner inp= new Scanner(System.in);
+         System.out.println("sayı giriniz : ");
+         int n = inp.nextInt();
+         double sonuc = 0.0;
+
+         for (double i=1;i<=n;i++){
+             sonuc += (1/i);
+
+         }
+         System.out.println(sonuc);
